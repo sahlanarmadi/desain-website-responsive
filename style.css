@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    display: flexbox;
+    background: url(abstrak\ color.avif);
+    background-size: cover;
+}
+
+.fotoprofil {
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url(mobil.jpg);
+    background-size: cover;
+    float: left;
+}
+
+ul {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-right: 72px;
+}
+
+li {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+li:hover,
+li:focus {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+header>li,
+a {
+    text-decoration: none;
+    color: #ffff;
+    /* text-shadow: 5px 5px black; */
+}
+
+.clear {
+    clear: left;
+}
+
+label {
+    font-size: 35px;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    border: 1px solid rgb(218, 213, 213);
+    background: transparent;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    align-content: space-around;
+    flex-direction: column;
+    margin: auto;
+    backdrop-filter: 20px;
+    box-shadow: 5px 5px rgb(219, 206, 206);
+    backdrop-filter: blur(10px);
+
+}
+
+main:hover> :not(:hover) {
+    filter: blur(5px);
+    opacity: 1;
+    -webkit-filter: blur(5px);
+}
+
+label {
+    transition: 0.5s;
+}
+
+label a {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.fashion a {
+    background: url(Fashion.jpeg);
+    background-size: cover;
+}
+
+.shoes a {
+    background: url(shoes.jpeg);
+    background-size: cover;
+}
+
+.accesories a {
+    background: url(accessories.jpeg);
+    background-size: cover;
+}
+
+.watch a {
+    background: url(watch.jpeg);
+    background-size: cover;
+    color: black;
+}
+
+.food a {
+    background: url(food.jpeg);
+    background-size: cover;
+}
+
+.gadget a {
+    background: url(gadget.jpeg);
+    background-size: cover;
+}
+
+@media (max-width: 653px) {
+    main {
+        border: none;
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+
+
+    ul {
+        text-align: center;
+        position: static;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+
+    label a {
+        width: 450px;
+        margin-left: 0px;
+    }
+
+}
+
+@media (min-width: 654px) and (max-width: 805px ) {
+    main {
+        border: none;
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+}
